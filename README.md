@@ -1,2 +1,2 @@
 # NewRepository
-Test of creating new repository on GitHub
+Test of creating new repository on my project
