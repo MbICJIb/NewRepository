@@ -1,0 +1,37 @@
+.main {
+	width:307px;
+	height: 519px;
+	border: 1px solid black;
+	padding: 0 40px;
+	font-family: "PT Sans",Verdana,Helvetica,sans-serif;
+	font-size: 12px;
+}
+.float_left {
+	float: left;
+	width: 90px;
+	height:40px;
+	line-height: 40px;
+	margin-bottom: 10px;
+}
+.float_right_field {
+	float: right;
+	width:195px;
+	height: 40px;
+	margin-bottom: 10px;
+	padding-left: 15px;
+}
+select .float_right_field{
+	
+}
+.red_asterisk {
+	color:red;
+	font-size: 10px;
+}
+.two_strings
+{
+	line-height: 20px;
+}
+.comments_field {
+	width: 310px;
+	height: 75px;
+}
