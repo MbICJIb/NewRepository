@@ -1,0 +1,148 @@
+		<form name="appointment" id="appointment" action="/ajax/zapis_na_priem.php" method="POST" enctype="multipart/form-data">
+			<span class="popup-title">Заявка на запись на прием</span>
+			<fieldset>
+				<div class="form-block">
+					<div class="form-rows">
+						<div class="row">
+							<div class="label-block">
+								<label for="id100">Имя<span class="required-star"></span></label>
+							</div>
+							<div class="row-sector">
+								<div class="text04">
+									<input name="MS_NAME" id="id100" placeholder="Иван Иванович" value="" type="text">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="label-block">
+								<label for="id102">Ваш телефон<span class="required-star"></span></label>
+							</div>
+							<div class="row-sector">
+								<div class="text04">
+									<input name="MS_P_PHONE" id="id102" placeholder="Телефон для связи" value="" type="text">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="label-block">
+								<label for="id103">Выберите клинику<span class="required-star"></span></label>
+							</div>
+							<div class="row-sector">
+								<div class="jq-selectbox jqselect" style="display: inline-block; position: relative; z-index:100"><select name="MS_P_CLINIC" style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">
+									<option value="29425">Клиника «Мать и дитя» «Сердечко»</option> 
+									<option value="29424">Медицинский центр «АВИЦЕННА» ГК «Мать и дитя» Новосибирск</option>
+									<option value="14377571">Новосибирский центр репродуктивной медицины</option>
+								</select>
+								<div class="jq-selectbox__select" style="position: relative">
+									<div class="jq-selectbox__select-text">Клиника «Мать и дитя» «Сердечко»
+									</div>
+									<div class="jq-selectbox__trigger">
+										<div class="jq-selectbox__trigger-arrow"></div>
+									</div>
+								</div>
+								<div class="jq-selectbox__dropdown" style="position: absolute; left: 0px; display: none;">
+									<div class="jq-selectbox__search" style="display: none;">
+										<input autocomplete="off" placeholder="Поиск..." type="search">
+									</div>
+									<div class="jq-selectbox__not-found" style="display: none;">Совпадений не найдено
+									</div>
+									<ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden">
+										<li class="selected sel" style="display: block; white-space: nowrap;">Клиника «Мать и дитя» «Сердечко»</li>
+										<li class="" style="display: block; white-space: nowrap;">Медицинский центр «АВИЦЕННА» ГК «Мать и дитя» Новосибирск</li>
+										<li class="" style="display: block; white-space: nowrap;">Новосибирский центр репродуктивной медицины</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="label-block">
+							<label for="id104">Укажите дату<span class="required-star"></span></label>
+						</div>
+						<div class="row-sector">
+							<div class="text04 text-calendar js-calendar-click"><input name="MS_P_DATE" id="id104" class="js-calendar-input hasDatepicker" value="" placeholder="ДД.ММ.ГГГГ"></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="label-block">
+							<label>Желаемое время<span class="required-star"></span></label>
+						</div>
+						<div class="row-sector">
+							<div class="jq-selectbox jqselect" style="display: inline-block; position: relative; z-index:100"><select name="MS_P_TIME" style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">
+								<option value="9:00">9:00</option>
+								<option value="9:30">9:30</option>
+								<option value="10:00">10:00</option>
+								<option value="10:30">10:30</option>
+								<option value="11:00">11:00</option>
+								<option value="11:30">11:30</option>
+								<option value="12:00">12:00</option>
+								<option value="12:30">12:30</option>
+								<option value="13:00">13:00</option>
+								<option value="13:30">13:30</option>
+								<option value="14:00">14:00</option>
+								<option value="14:30">14:30</option>
+								<option value="15:00">15:00</option>
+								<option value="15:30">15:30</option>
+								<option value="16:00">16:00</option>
+								<option value="16:30">16:30</option>
+								<option value="17:00">17:00</option>
+								<option value="17:30">17:30</option>
+								<option value="18:00">18:00</option>
+								<option value="18:30">18:30</option>
+								<option value="19:00">19:00</option>
+							</select><div class="jq-selectbox__select" style="position: relative"><div class="jq-selectbox__select-text">9:00</div><div class="jq-selectbox__trigger"><div class="jq-selectbox__trigger-arrow"></div></div></div><div class="jq-selectbox__dropdown" style="position: absolute; left: 0px; display: none;"><div class="jq-selectbox__search"><input autocomplete="off" placeholder="Поиск..." type="search"></div><div class="jq-selectbox__not-found" style="display: none;">Совпадений не найдено</div><ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden"><li class="selected sel" style="display: block; white-space: nowrap;">9:00</li><li class="" style="display: block; white-space: nowrap;">9:30</li><li class="" style="display: block; white-space: nowrap;">10:00</li><li class="" style="display: block; white-space: nowrap;">10:30</li><li class="" style="display: block; white-space: nowrap;">11:00</li><li class="" style="display: block; white-space: nowrap;">11:30</li><li class="" style="display: block; white-space: nowrap;">12:00</li><li class="" style="display: block; white-space: nowrap;">12:30</li><li class="" style="display: block; white-space: nowrap;">13:00</li><li class="" style="display: block; white-space: nowrap;">13:30</li><li class="" style="display: block; white-space: nowrap;">14:00</li><li class="" style="display: block; white-space: nowrap;">14:30</li><li class="" style="display: block; white-space: nowrap;">15:00</li><li class="" style="display: block; white-space: nowrap;">15:30</li><li class="" style="display: block; white-space: nowrap;">16:00</li><li class="" style="display: block; white-space: nowrap;">16:30</li><li class="" style="display: block; white-space: nowrap;">17:00</li><li class="" style="display: block; white-space: nowrap;">17:30</li><li class="" style="display: block; white-space: nowrap;">18:00</li><li class="" style="display: block; white-space: nowrap;">18:30</li><li class="" style="display: block; white-space: nowrap;">19:00</li></ul></div></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="label-block">
+							<label>
+							Удобное время для звонка                                </label>
+						</div>
+						<div class="row-sector">
+							<div class="jq-selectbox jqselect" style="display: inline-block; position: relative; z-index:100"><select name="MS_P_CALLBACK_TIME" style="margin: 0px; padding: 0px; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; opacity: 0;">
+								<option value="" selected="selected">Не выбрано</option>
+								<option value="9:00">9:00</option>
+								<option value="9:30">9:30</option>
+								<option value="10:00">10:00</option>
+								<option value="10:30">10:30</option>
+								<option value="11:00">11:00</option>
+								<option value="11:30">11:30</option>
+								<option value="12:00">12:00</option>
+								<option value="12:30">12:30</option>
+								<option value="13:00">13:00</option>
+								<option value="13:30">13:30</option>
+								<option value="14:00">14:00</option>
+								<option value="14:30">14:30</option>
+								<option value="15:00">15:00</option>
+								<option value="15:30">15:30</option>
+								<option value="16:00">16:00</option>
+								<option value="16:30">16:30</option>
+								<option value="17:00">17:00</option>
+								<option value="17:30">17:30</option>
+								<option value="18:00">18:00</option>
+								<option value="18:30">18:30</option>
+								<option value="19:00">19:00</option>
+								<option value="19:30">19:30</option>
+								<option value="20:00">20:00</option>
+							</select><div class="jq-selectbox__select" style="position: relative"><div class="jq-selectbox__select-text">Не выбрано</div><div class="jq-selectbox__trigger"><div class="jq-selectbox__trigger-arrow"></div></div></div><div class="jq-selectbox__dropdown" style="position: absolute; left: 0px; display: none;"><div class="jq-selectbox__search"><input autocomplete="off" placeholder="Поиск..." type="search"></div><div class="jq-selectbox__not-found" style="display: none;">Совпадений не найдено</div><ul style="position: relative; list-style: none; overflow: auto; overflow-x: hidden"><li class="selected sel" style="display: block; white-space: nowrap;">Не выбрано</li><li class="" style="display: block; white-space: nowrap;">9:00</li><li class="" style="display: block; white-space: nowrap;">9:30</li><li class="" style="display: block; white-space: nowrap;">10:00</li><li class="" style="display: block; white-space: nowrap;">10:30</li><li class="" style="display: block; white-space: nowrap;">11:00</li><li class="" style="display: block; white-space: nowrap;">11:30</li><li class="" style="display: block; white-space: nowrap;">12:00</li><li class="" style="display: block; white-space: nowrap;">12:30</li><li class="" style="display: block; white-space: nowrap;">13:00</li><li class="" style="display: block; white-space: nowrap;">13:30</li><li class="" style="display: block; white-space: nowrap;">14:00</li><li class="" style="display: block; white-space: nowrap;">14:30</li><li class="" style="display: block; white-space: nowrap;">15:00</li><li class="" style="display: block; white-space: nowrap;">15:30</li><li class="" style="display: block; white-space: nowrap;">16:00</li><li class="" style="display: block; white-space: nowrap;">16:30</li><li class="" style="display: block; white-space: nowrap;">17:00</li><li class="" style="display: block; white-space: nowrap;">17:30</li><li class="" style="display: block; white-space: nowrap;">18:00</li><li class="" style="display: block; white-space: nowrap;">18:30</li><li class="" style="display: block; white-space: nowrap;">19:00</li><li class="" style="display: block; white-space: nowrap;">19:30</li><li class="" style="display: block; white-space: nowrap;">20:00</li></ul></div></div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="textarea01">
+							<textarea cols="30" rows="10" placeholder="Какие услуги клиники вас интересуют" name="MS_PREVIEW_TEXT"></textarea>
+						</div>
+					</div>
+					<div id="gr-zapis-na-priem" style="margin-top: 21px;" class="gr-form-block "></div>
+
+					<script>
+						init_g_recaptha('gr-zapis-na-priem');
+					</script>
+					<div class="row align-right">
+						<div class="button-holder01">
+							<span class="button01 block-button js-goal js-gasend" data-targetga="event/zapis1/zapis2" data-google="register" data-target="SEND"><input name="form" value="app" type="submit">Отправить</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+	</form>

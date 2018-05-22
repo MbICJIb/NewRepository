@@ -6,52 +6,117 @@
 	<link rel="stylesheet" type="text/css" href="priem.css">
 </head>
 <body>
-<div class="main">
-<p>
-	<label for="b_widgets_footer__height_appointment_name">
-		<div class="float_left">Имя<sup class="red_asterisk">*</sup></div>
-	</label>
-	<input class="float_right_field" type="text" name="name" id="b_widgets_footer__height_appointment_name" placeholder="Иван Иванович">
-</p>
-<p>
-	<label for="b_widgets_footer__height_appointment_phone">
-		<div class="float_left">Телефон<sup class="red_asterisk">*</sup></div>
-	</label>
-	<input class="float_right_field" type="text" name="phone" id="b_widgets_footer__height_appointment_phone" placeholder="Телефон для связи">
-</p>
-<p>
-	<label for="b_widgets_footer__height_appointment_clinic">
-		<div class="float_left">Клиника<sup class="red_asterisk">*</sup></div>
-	</label>
-	<select class="float_right_field" type="text" name="clinic" id="b_widgets_footer__height_appointment_clinic">
-		<option>Новосибирский центр развития</option>
-	</select>
-</p>
-<p>
-	<label for="b_widgets_footer__height_appointment_date">
-		<div class="float_left">Дата<sup class="red_asterisk">*</sup></div>
-	</label>
-	<input class="float_right_field" type="text" name="date" id="b_widgets_footer__height_appointment_date" placeholder="ДД.ММ.ГГГГ">
-</p>
-<p>
-	<label for="b_widgets_footer__height_appointment_time">
-		<div class="float_left">Время<sup class="red_asterisk">*</sup></div>
-	</label>
-	<select class="float_right_field" type="text" name="time" id="b_widgets_footer__height_appointment_time">
-		<option>9:00</option>
-	</select>
-</p>
-<p>
-	<label for="b_widgets_footer__height_appointment_time">
-		<div class="float_left two_strings">Желаемое<br>время звонка</div>
-	</label>
-	<select class="float_right_field" type="text" name="time" id="b_widgets_footer__height_appointment_time">
-		<option>Не выбрано</option>
-	</select>
-</p>
-<p>
-	<textarea class="comments_field" type="text" name="date" id="b_widgets_footer__height_appointment_comment" placeholder="Какие услуги клиники вас интересуют" rows="3"></textarea> 
-</p>
-</div>
+	<div class="main">
+		<form name="appointment" id="appointment" action="/ajax/zapis_na_priem.php" method="POST" enctype="multipart/form-data">
+			<span class="title">Запись на прием</span>
+			<fieldset>
+
+
+
+				<div class="row">
+					<label for="b_widgets_footer__height_appointment_name">
+						<div class="label_block">Имя<sup class="red_asterisk">*</sup></div>
+					</label>
+					<input class="float_right_field" type="text" name="MS_NAME" id="b_widgets_footer__height_appointment_name" placeholder="Иван Иванович">
+				</div>
+				<div class="row">
+					<label for="b_widgets_footer__height_appointment_phone">
+						<div class="label_block">Телефон<sup class="red_asterisk">*</sup></div>
+					</label>
+					<input class="float_right_field" type="text" name="MS_P_PHONE" id="b_widgets_footer__height_appointment_phone" placeholder="Телефон для связи">
+				</div>
+				<div class="row">
+					<label for="b_widgets_footer__height_appointment_clinic">
+						<div class="label_block">Клиника<sup class="red_asterisk">*</sup></div>
+					</label>
+					<select class="float_right_field" type="text" name="MS_P_CLINIC" id="b_widgets_footer__height_appointment_clinic">
+						<option value="29425">Клиника «Мать и дитя» «Сердечко»</option> 
+						<option value="29424">Медицинский центр «АВИЦЕННА» ГК «Мать и дитя» Новосибирск</option>
+						<option value="14377571">Новосибирский центр репродуктивной медицины</option>
+					</select>
+				</div>
+				<div class="row">
+					<label for="b_widgets_footer__height_appointment_date">
+						<div class="label_block">Дата<sup class="red_asterisk">*</sup></div>
+					</label>
+					<input class="float_right_field" type="text" name="MS_P_DATE" id="b_widgets_footer__height_appointment_date" placeholder="ДД.ММ.ГГГГ">
+				</div>
+				<div class="row">
+					<label for="b_widgets_footer__height_appointment_time">
+						<div class="label_block">Время<sup class="red_asterisk">*</sup></div>
+					</label>
+					<select class="float_right_field" type="text" name="MS_P_TIME" id="b_widgets_footer__height_appointment_time">
+						<option value="9:00">9:00</option>
+						<option value="9:30">9:30</option>
+						<option value="10:00">10:00</option>
+						<option value="10:30">10:30</option>
+						<option value="11:00">11:00</option>
+						<option value="11:30">11:30</option>
+						<option value="12:00">12:00</option>
+						<option value="12:30">12:30</option>
+						<option value="13:00">13:00</option>
+						<option value="13:30">13:30</option>
+						<option value="14:00">14:00</option>
+						<option value="14:30">14:30</option>
+						<option value="15:00">15:00</option>
+						<option value="15:30">15:30</option>
+						<option value="16:00">16:00</option>
+						<option value="16:30">16:30</option>
+						<option value="17:00">17:00</option>
+						<option value="17:30">17:30</option>
+						<option value="18:00">18:00</option>
+						<option value="18:30">18:30</option>
+						<option value="19:00">19:00</option>
+						<option value="19:30">19:30</option>
+						<option value="20:00">20:00</option>
+					</select>
+				</div>
+				<div class="row">
+					<label for="b_widgets_footer__height_appointment_time">
+						<div class="label_block two_strings">Желаемое<br>время звонка</div>
+					</label>
+					<select class="float_right_field" type="text" name="MS_P_CALLBACK_TIME" id="b_widgets_footer__height_appointment_time">
+						<option value="" selected="selected">Не выбрано</option>
+						<option value="9:00">9:00</option>
+						<option value="9:30">9:30</option>
+						<option value="10:00">10:00</option>
+						<option value="10:30">10:30</option>
+						<option value="11:00">11:00</option>
+						<option value="11:30">11:30</option>
+						<option value="12:00">12:00</option>
+						<option value="12:30">12:30</option>
+						<option value="13:00">13:00</option>
+						<option value="13:30">13:30</option>
+						<option value="14:00">14:00</option>
+						<option value="14:30">14:30</option>
+						<option value="15:00">15:00</option>
+						<option value="15:30">15:30</option>
+						<option value="16:00">16:00</option>
+						<option value="16:30">16:30</option>
+						<option value="17:00">17:00</option>
+						<option value="17:30">17:30</option>
+						<option value="18:00">18:00</option>
+						<option value="18:30">18:30</option>
+						<option value="19:00">19:00</option>
+						<option value="19:30">19:30</option>
+						<option value="20:00">20:00</option>
+					</select>
+				</div>
+				<div class="row">
+					<textarea class="comments_field" type="text" name="MS_PREVIEW_TEXT" id="b_widgets_footer__height_appointment_comment" placeholder="Какие услуги клиники вас интересуют" rows="3"></textarea> 
+				</div>
+				<div id="gr-zapis-na-priem" style="margin-top: 21px;" class="gr-form-block "></div>
+
+				<script>
+					init_g_recaptha('gr-zapis-na-priem');
+				</script>
+				<div class="row align-right">
+					<div class="button-holder01">
+						<span class="button01 block-button js-goal js-gasend" data-targetga="event/zapis1/zapis2" data-google="register" data-target="SEND"><input name="form" value="app" type="submit">Отправить</span>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
 </body>
 </html>
