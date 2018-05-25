@@ -1,0 +1,146 @@
+/*css layout*/
+.b_widgets_footer__height_bgnp {
+	background: url("../images/backgroundNoProgramWithBubble.png");
+}
+.se_appointment_widget {
+	font-size: 14px;
+}
+.se_appointment_widget__header {
+	font-family: 'cocon-regularregular', 'PT Sans', Arial, sans-serif;
+	font-size: 18px;
+	margin: 0 0 15px 0;
+	font-weight: normal;
+	text-align: center;
+}
+.se_appointment_widget_form {
+	width: 307px;
+	margin-top: 10px;
+}
+.se_appointment_widget_form__row {
+	width: 100%;
+	padding: 5px 0 0;
+	margin-bottom: 7px;
+}
+.se_appointment_widget_form__row:after {
+	display:block;
+	clear:both;
+	content:" ";
+}
+.se_appointment_widget_form__label_container {
+	float: left;
+	display: table-cell;
+	vertical-align: middle;
+	border: none;
+	/* line-height:38px; при высоте в 1 строку */
+	text-align: left;
+	width: 94px;
+}
+.se_appointment_widget_form__right_column {
+	float: right;
+	width: 213px;
+}
+.se_appointment_widget_form__input_container {
+	overflow:hidden;
+	height:28px;
+	padding:5px 14px;
+	border: 1px solid #999;
+	background: #fff;
+}
+.se_appointment_widget_form__input {
+	background:none;
+	border:0;
+	width:100%;
+	color:#000;
+	line-height:28px;
+	height:28px;
+	padding:0;
+	float:left;
+}
+.se_appointment_widget_form__input::-moz-placeholder {
+	color: #bfbebe;
+	opacity:1;
+}
+.se_appointment_widget_form__input::-webkit-input-placeholder {
+	color: #bfbebe;
+	opacity:1;
+}
+.se_appointment_widget_form__input:focus:-moz-placeholder {
+	opacity: 1;
+}
+.se_appointment_widget_form__input:focus::-moz-placeholder {
+	opacity: 1;
+}
+.se_appointment_widget_form__input:focus::-webkit-input-placeholder {
+	opacity: 1;
+}
+.se_appointment_widget_form__textarea_container {
+	overflow:hidden;
+	padding:5px 14px;
+	margin-bottom: 10px;
+	border: 1px solid #999;
+	background: #fff;
+}
+.se_appointment_widget_form__textarea {
+	margin:0;
+	resize:none;
+	overflow:auto;
+	background:none;
+	border:0;
+	width:100%;
+	color:#000;
+	line-height:28px;
+	height:88px;
+	padding:0;
+	float:left;
+}
+.se_appointment_widget_form__textarea::-moz-placeholder {
+    color: #bfbebe;
+    opacity:1;
+}
+.se_appointment_widget_form__textarea::-webkit-input-placeholder {
+    color: #bfbebe;
+    opacity:1;
+}
+.se_appointment_widget_form__textarea:focus:-moz-placeholder {
+   opacity: 1;
+}
+.se_appointment_widget_form__textarea:focus::-moz-placeholder {
+   opacity: 1;
+}
+.se_appointment_widget_form__textarea:focus::-webkit-input-placeholder {
+   opacity: 1;
+}
+
+
+.label-block-appointment {
+    float:left;
+	width: 94px;
+	line-height:38px;
+}
+
+.row-sector-appointment,
+.row-sector-appointment .jq-selectbox{
+    width: 213px;
+}
+
+
+.label-block-appointment {
+    width: 94px;
+}
+.label-block-appointment-long {
+    line-height: 19px;
+}
+.form-rows > .row-appointment {
+    padding: 5px 0 0;
+    margin-bottom: 7px;
+}
+.row-appointment textarea{
+    height: 63px;
+}
+.text04-appointment input,
+.label-block-appointment,
+.row-sector-appointment .jq-selectbox,
+.row-sector-appointment .jq-selectbox__select,
+.row-appointment textarea{
+    font-size: 14px;
+}
